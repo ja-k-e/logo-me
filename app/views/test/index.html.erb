@@ -1,0 +1,46 @@
+<style>
+section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section > div {
+  width: 25%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+section > div > input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section > div > img {
+  width: 100%;
+  height: auto;
+}
+
+</style>
+<section>
+  <% @items.each do |item| %>
+    <div>
+      <input type="text" readonly value="/<%= item %>" /><br>
+      <img src="/?<%= item %>" width="300" />
+    </div>
+  <% end %>
+</section>
