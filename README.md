@@ -3,6 +3,10 @@ Need a placeholder logo?
 
 ![OK](http://logo-me.herokuapp.com?name=OK+Here+It+Is&align=center)
 
+```
+<img src="http://logo-me.herokuapp.com?name=OK+Here+It+Is&align=center" />
+```
+
 #API
 
 [logo-me.herokuapp.com](http://logo-me.herokuapp.com)
