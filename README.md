@@ -23,7 +23,7 @@ All params are optional and will be defaulted or randomized for you.
 
 ##`weight`
   - options: numeric or text (`700`, `bold`, etc...)
-  - default: `bold`
+  - default: random
 
 ##`family`
   - options: sans-serif, serif, cursive, fantasy, monospace
