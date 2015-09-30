@@ -14,7 +14,7 @@ class SVGBuilderService
       size: font_size,
       width: rough_length(name, font_size),
       align: params[:align] || %w(center left).sample,
-      weight: params[:weight] || '700',
+      weight: params[:weight] || %w(700 400 300).sample,
       family: params[:family] || 'sans-serif',
       color: params[:color] || '#222',
       icon: params[:icon] == 'false' ? nil : random_icon
